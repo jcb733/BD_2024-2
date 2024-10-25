@@ -70,10 +70,10 @@ public class MenuInserir {
                 colaborador.setFuncionarioId(rs.getInt(1));
             }
 
-            System.out.println("Funcionário inserido com sucesso!");
+            System.out.println("Colaborador inserido com sucesso!");
         } catch (SQLException e) {
             e.printStackTrace();
-            System.out.println("Erro ao inserir funcionário: " + e.getMessage());
+            System.out.println("Erro ao inserir Colaborador: " + e.getMessage());
         }
     }
 }
