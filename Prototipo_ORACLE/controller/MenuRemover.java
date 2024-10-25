@@ -11,7 +11,7 @@ public class MenuRemover {
         
         do {
             System.out.println("\n=== Submenu de Remoção ===");
-            System.out.println("1. Remover funcionário");
+            System.out.println("1. Remover Colaborador");
             System.out.println("2. Voltar ao menu principal");
             System.out.print("Escolha uma opção: ");
             
@@ -32,8 +32,8 @@ public class MenuRemover {
     }
 
     private static void removerFuncionario(Scanner teclado, Connection connection) {
-        System.out.println("\n=== Remover Funcionário ===");
-        System.out.print("Digite o ID do Funcionário: ");
+        System.out.println("\n=== Remover Colaborador ===");
+        System.out.print("Digite o ID do Colaborador: ");
         int id = teclado.nextInt();
         
         String deletePontoSQL = "DELETE FROM Ponto WHERE funcionario_id = ?";
@@ -53,10 +53,10 @@ public class MenuRemover {
                     int funcionariosRemovidos = pstmtFuncionario.executeUpdate();
                     
                     if (funcionariosRemovidos > 0) {
-                        System.out.println("Funcionário e seus registros de ponto removidos com sucesso!");
+                        System.out.println("Colaborador e seus registros de ponto removidos com sucesso!");
                         connection.commit(); 
                     } else {
-                        System.out.println("Funcionário não encontrado.");
+                        System.out.println("Colaborador não encontrado.");
                         connection.rollback(); 
                     }
                 }
