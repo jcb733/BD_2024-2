@@ -12,7 +12,7 @@ public class MenuAtualizar {
         
         do {
             System.out.println("\n=== Submenu de Atualização ===");
-            System.out.println("1. Atualizar dados do funcionário");
+            System.out.println("1. Atualizar dados do Colaborador");
             System.out.println("2. Voltar ao menu principal");
             System.out.print("Escolha uma opção: ");
             
@@ -33,7 +33,7 @@ public class MenuAtualizar {
     }
 
     private static void atualizarFuncionario(Scanner teclado, Connection connection) {
-        System.out.println("\n=== Atualizar Dados do Funcionário ===");
+        System.out.println("\n=== Atualizar Dados do Colaborador ===");
         System.out.print("Digite o ID do Funcionário para atualizar: ");
         int id = teclado.nextInt();
         teclado.nextLine();
