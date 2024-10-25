@@ -45,7 +45,7 @@ public class MenuPrincipal {
             do {
                 limparTela();
                 System.out.println("Menu Principal\n" +
-                    "1. CADASTRAR FUNCIONÁRIO\n" +
+                    "1. CADASTRAR COLABORADOR\n" +
                     "2. CADASTRAR PONTO\n" +    
                     "3. REMOVER REGISTROS\n" +
                     "4. ATUALIZAR REGISTROS\n" +
