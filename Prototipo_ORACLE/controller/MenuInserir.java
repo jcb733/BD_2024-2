@@ -13,7 +13,7 @@ public class MenuInserir {
         int opcao;
         do {
             System.out.println("\n=== Submenu de Inserção ===");
-            System.out.println("1. Inserir dados do Colaborador");
+            System.out.println("1. Inserir dados do Funcionário");
             System.out.println("2. Voltar ao menu principal");
             System.out.print("Escolha uma opção: ");
             
