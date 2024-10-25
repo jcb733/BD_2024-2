@@ -33,7 +33,7 @@ public class MenuRelatorio {
     }
 
     private static void exibirRelatorio(Scanner teclado, Connection connection) {
-        System.out.println("\n=== Relatório de Funcionários e Pontos ===\n");
+        System.out.println("\n=== Relatório de Colaboradores e Pontos ===\n");
 
         String query = "SELECT f.funcionario_id, f.nome, f.telefone, p.data_registro, p.hora_entrada, p.hora_saida, p.horas_trabalhadas " +
                       "FROM Colaborador f LEFT JOIN Ponto p ON f.funcionario_id = p.funcionario_id";
